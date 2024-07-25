@@ -1,0 +1,23 @@
+#==============================================================================================================================================================================================================================================================================================================
+
+memes = {
+            "XD": "Una expresion de risa pero algo sarcastico y depende de que lo uses",
+            "LOL": "Expresion de risa anticuada y muy poco usada"
+            "Cringe": "Expresion que se utiliza para expresar la pena ajena"
+            }
+#==============================================================================================================================================================================================================================================================================================================
+
+options = int(input("Que deseas hacer (1.Agregar) (2.Buscar)"))
+
+if options == 1:
+  key = input("Palabra:").upper()
+  sig = input("Significado:").upper()
+
+if options == 2:
+
+  word = input("Escribe una palabra que no entindas").upper()
+  
+  if word in memes.keys():
+    print(memes[word])
+  else:
+    print("Esta palabra no esta en el diccionario...")
